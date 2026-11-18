@@ -1,0 +1,7 @@
+/system identity set name={{ name }}
+{% for a in addresses %}
+/ip address add address={{ a.address }} interface={{ a.interface }}
+{% endfor %}
+{% for r in routes %}
+/ip route add dst-address={{ r["dst-address"] }} gateway={{ r.gateway }}
+{% endfor %}
