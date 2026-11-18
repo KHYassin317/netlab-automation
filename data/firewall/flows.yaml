@@ -1,0 +1,5 @@
+flows:
+  - {src: 10.0.10.5, dst: 10.0.20.10, proto: tcp, port: 443, expect: accept}
+  - {src: 10.0.10.5, dst: 10.0.20.53, proto: udp, port: 53, expect: accept}
+  - {src: 10.0.10.5, dst: 10.0.20.10, proto: tcp, port: 22, expect: drop}
+  - {src: 10.0.99.9, dst: 10.0.20.10, proto: tcp, port: 443, expect: drop}

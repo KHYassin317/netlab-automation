@@ -1,0 +1,4 @@
+rules:
+  - {name: allow-web, src: 10.0.10.0/24, dst: 10.0.20.10/32, proto: tcp, port: 443, action: accept}
+  - {name: allow-all, src: any, dst: any, proto: any, port: any, action: accept}
+  - {name: allow-dns, src: 10.0.10.0/24, dst: 10.0.20.53/32, proto: udp, port: 53, action: accept}

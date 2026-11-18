@@ -1,0 +1,8 @@
+whitelist:
+  - 10.0.20.10
+  - 10.0.20.53
+  - 192.168.10.254
+block_severities:
+  - high
+  - critical
+block_duration: 1h
